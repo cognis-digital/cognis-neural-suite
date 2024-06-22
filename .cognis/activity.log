@@ -37,3 +37,4 @@
 2026-01-17T08:04:44  docs: expand examples
 2026-05-16T15:21:51  test: strengthen coverage
 2024-06-09T14:22:02  style(output): respect .gitignore when walking
+2024-06-22T09:39:09  feat(mcp): add pagination to large reports
