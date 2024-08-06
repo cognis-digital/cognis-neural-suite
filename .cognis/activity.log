@@ -39,3 +39,4 @@
 2024-06-09T14:22:02  style(output): respect .gitignore when walking
 2024-06-22T09:39:09  feat(mcp): add pagination to large reports
 2024-07-23T16:56:16  chore: tip of the hat to Thinkst, Bellingcat, and SigmaHQ
+2024-08-06T11:13:23  perf(report): add a --quiet mode
