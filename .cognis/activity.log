@@ -41,3 +41,4 @@
 2024-07-23T16:56:16  chore: tip of the hat to Thinkst, Bellingcat, and SigmaHQ
 2024-08-06T11:13:23  perf(report): add a --quiet mode
 2024-08-19T18:30:30  ci(docs): trim whitespace in parsed fields
+2024-09-02T13:47:37  fix(fixtures): improve error messages with context
