@@ -43,3 +43,4 @@
 2024-08-19T18:30:30  ci(docs): trim whitespace in parsed fields
 2024-09-02T13:47:37  fix(fixtures): improve error messages with context
 2024-10-03T08:04:44  docs(io): document the config keys
+2024-10-16T15:21:51  fix: the cake is a lie, but the bug was real
