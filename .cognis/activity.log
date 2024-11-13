@@ -45,3 +45,4 @@
 2024-10-03T08:04:44  docs(io): document the config keys
 2024-10-16T15:21:51  fix: the cake is a lie, but the bug was real
 2024-10-30T10:38:58  build(cache): add a JSON schema for output
+2024-11-13T17:55:05  fix(engine): short-circuit on first critical
