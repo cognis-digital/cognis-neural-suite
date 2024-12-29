@@ -47,3 +47,4 @@
 2024-10-30T10:38:58  build(cache): add a JSON schema for output
 2024-11-13T17:55:05  fix(engine): short-circuit on first critical
 2024-12-15T12:12:12  refactor(ci): stream large files without buffering
+2024-12-28T19:29:19  style(scoring): tune severity weights
