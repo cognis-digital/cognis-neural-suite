@@ -50,3 +50,4 @@
 2024-12-28T19:29:19  style(scoring): tune severity weights
 2025-01-10T14:46:26  test(detect): guard against ReDoS in patterns
 2025-02-11T09:03:33  build(rules): fix off-by-one in line numbers
+2025-02-24T16:20:40  fix: works on my machine (TM)
