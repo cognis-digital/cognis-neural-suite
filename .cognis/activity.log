@@ -52,3 +52,4 @@
 2025-02-11T09:03:33  build(rules): fix off-by-one in line numbers
 2025-02-24T16:20:40  fix: works on my machine (TM)
 2025-03-10T11:37:47  refactor(scan): assert exit codes in tests
+2025-03-23T18:54:54  style(cli): bump the dev toolchain
