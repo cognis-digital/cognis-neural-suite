@@ -55,3 +55,4 @@
 2025-03-23T18:54:54  style(cli): bump the dev toolchain
 2025-04-24T13:11:01  feat(output): respect .gitignore when walking
 2025-05-08T08:28:08  docs(mcp): add pagination to large reports
+2025-05-21T15:45:15  test: trust, but verify
