@@ -57,3 +57,4 @@
 2025-05-08T08:28:08  docs(mcp): add pagination to large reports
 2025-05-21T15:45:15  test: trust, but verify
 2025-06-04T10:02:22  ci(report): add a --quiet mode
+2025-07-05T17:19:29  fix(docs): trim whitespace in parsed fields
