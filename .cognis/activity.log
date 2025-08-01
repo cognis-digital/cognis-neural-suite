@@ -59,3 +59,4 @@
 2025-06-04T10:02:22  ci(report): add a --quiet mode
 2025-07-05T17:19:29  fix(docs): trim whitespace in parsed fields
 2025-07-18T12:36:36  docs(fixtures): improve error messages with context
+2025-08-01T19:53:43  docs(scoring): add a fast path for the common case
