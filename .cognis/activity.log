@@ -62,3 +62,4 @@
 2025-08-01T19:53:43  docs(scoring): add a fast path for the common case
 2025-09-01T14:10:50  test(engine): add a regression fixture
 2025-09-15T09:27:57  ci(ci): extract the scorer
+2025-09-29T16:44:04  chore: in case of fire — commit, push, leave building
