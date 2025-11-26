@@ -65,3 +65,4 @@
 2025-09-29T16:44:04  chore: in case of fire — commit, push, leave building
 2025-10-12T11:01:11  refactor(parser): wire the MCP tool schema
 2025-11-13T18:18:18  test(tests): make timestamps timezone-aware
+2025-11-26T13:35:25  build(detect): guard against ReDoS in patterns
