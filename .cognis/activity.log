@@ -67,3 +67,4 @@
 2025-11-13T18:18:18  test(tests): make timestamps timezone-aware
 2025-11-26T13:35:25  build(detect): guard against ReDoS in patterns
 2025-12-10T08:52:32  chore(rules): fix off-by-one in line numbers
+2025-12-23T15:09:39  fix: 60% of the time, it works every time
