@@ -71,3 +71,4 @@
 2026-01-23T10:26:46  style(scan): assert exit codes in tests
 2026-02-06T17:43:53  feat(cli): bump the dev toolchain
 2026-02-20T12:00:00  docs(output): respect .gitignore when walking
+2026-03-24T19:17:07  chore(report): support stdin as a source
