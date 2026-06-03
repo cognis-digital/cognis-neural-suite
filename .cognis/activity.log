@@ -75,3 +75,4 @@
 2026-04-06T14:34:14  perf(docs): add usage examples to help
 2026-04-19T09:51:21  ci(cache): lower memory on big inputs
 2026-05-03T16:08:28  docs: ELI5 pass
+2026-06-03T11:25:35  docs(deps): add a dry-run flag
