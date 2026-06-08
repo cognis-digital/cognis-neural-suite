@@ -1,8 +1,8 @@
 # Cognis Neural Suite
 
-> **266+ single-purpose, self-hostable, MCP-native tools** for security, AI, military/IC, compliance, data, dev, and business — by [Cognis Digital](https://cognis.digital).
+> **270+ single-purpose, self-hostable, MCP-native tools** for security, AI, military/IC, compliance, data, dev, and business — by [Cognis Digital](https://cognis.digital).
 
-![Tools](https://img.shields.io/badge/tools-266%2B-6b46c1) [![License](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE) ![MCP](https://img.shields.io/badge/MCP-native-black)
+![Tools](https://img.shields.io/badge/tools-270%2B-6b46c1) [![License](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE) ![MCP](https://img.shields.io/badge/MCP-native-black)
 
 Every tool ships a CLI, JSON/SARIF output, an MCP server, polyglot ports (Py/JS/Go/Rust), a Dev Container, cross-OS + cloud deploy, and CI/CodeQL. Most ship **real, tested implementations**.
 
@@ -30,7 +30,7 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 ## Catalog
 
 
-<details><summary><b>🛡️ AI Security & Agents</b> — 32 repos</summary>
+<details><summary><b>🛡️ AI Security & Agents</b> — 36 repos</summary>
 
 | Tool | Description |
 |---|---|
@@ -40,13 +40,17 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 | [agentpassport](https://github.com/cognis-digital/agentpassport) | Verifiable AI-agent identity + multi-hop delegation chains anchored to a human principal (the unsolved 2026 agent-auth gap) |
 | [agentsmith](https://github.com/cognis-digital/agentsmith) | Config-first scaffolding and orchestration for multi-agent workflows |
 | [aicard](https://github.com/cognis-digital/aicard) | Auto-generated NIST AI RMF / EU AI Act Annex IV model & system cards |
+| [biascope](https://github.com/cognis-digital/biascope) | Embedded bias probe suite — demographic / occupational / geographic |
 | [cloud-setups](https://github.com/cognis-digital/cloud-setups) | Firebase, GCP, and Azure project setups — bootstrap, deploy, IaC, and emulators, merged and rebranded |
 | [cognis-devbox](https://github.com/cognis-digital/cognis-devbox) | Custom dev OS image (Packer/KVM/Vagrant/cloud-init) with every language + cloud + AI tool preinstalled |
 | [cognis-operations](https://github.com/cognis-digital/cognis-operations) | How an agentic company runs — Cognis Digital's 4-layer operating model, org chart, agent registry, and governance |
 | [cognis-sources](https://github.com/cognis-digital/cognis-sources) | Curated index of 10k+ public technical & research links (privacy-filtered) |
 | [compliance-atlas](https://github.com/cognis-digital/compliance-atlas) | Condensed, cross-walked reference for SOC2, ISO 27001, NIST CSF/800-53/800-171, CMMC, GDPR, CCPA, HIPAA, PCI DSS, EU AI Act |
 | [evalbench](https://github.com/cognis-digital/evalbench) | Offline LLM / agent eval harness with regression gates |
+| [guardpost](https://github.com/cognis-digital/guardpost) | Runtime agent firewall — PII redaction, rate limits, policy enforcement |
+| [hallumark](https://github.com/cognis-digital/hallumark) | LLM hallucination & grounding auditor for RAG systems |
 | [hermes](https://github.com/cognis-digital/hermes) | Model-agnostic, portable long-term memory framework for AI agents (MCP-native) |
+| [ledgermind](https://github.com/cognis-digital/ledgermind) | Local LLM cost & token forensics proxy with anomaly detection |
 | [locateanything](https://github.com/cognis-digital/locateanything) | Infer where a photo was taken using a local uncensored vision + reasoning model (OSINT/geoint, 100% local) |
 | [mcpharden](https://github.com/cognis-digital/mcpharden) | MCP server hardening linter — capability declarations, transport, tool descriptions |
 | [mcpify](https://github.com/cognis-digital/mcpify) | Turn any command-line tool into an MCP server — one line, zero boilerplate |
@@ -103,80 +107,101 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 
 </details>
 
-<details><summary><b>🔫 Tactical & SecOps</b> — 70 repos</summary>
+<details><summary><b>⚔️ Red Team & Offensive</b> — 5 repos</summary>
+
+| Tool | Description |
+|---|---|
+| [c2detect](https://github.com/cognis-digital/c2detect) | C2 server fingerprinter — Cobalt Strike, Sliver, Mythic, Havoc, Brute Ratel |
+| [crackq](https://github.com/cognis-digital/crackq) | Self-hosted password cracking queue — multi-user hashcat with audit log |
+| [payloadlab](https://github.com/cognis-digital/payloadlab) | Static malicious payload analyzer — PE/ELF/LNK/macro/OneNote |
+| [pwnreview](https://github.com/cognis-digital/pwnreview) | Pentest report generator — YAML findings to CREST-grade PDF |
+| [redpath](https://github.com/cognis-digital/redpath) | Active Directory attack path mapper — minimum-cost paths + remediation priority |
+
+</details>
+
+<details><summary><b>🔵 Blue Team & Detection</b> — 6 repos</summary>
+
+| Tool | Description |
+|---|---|
+| [canarynet](https://github.com/cognis-digital/canarynet) | Self-hosted canary token network — AWS keys, DNS, docs, web URLs |
+| [edrgap](https://github.com/cognis-digital/edrgap) | EDR coverage & bypass detector — reconciles MDM + EDR + AD inventories |
+| [honeytrace](https://github.com/cognis-digital/honeytrace) | Active-decoy network lure system — SSH, RDP, SMB, web honeypots |
+| [phishforge](https://github.com/cognis-digital/phishforge) | Open-source phishing simulation — campaigns, templates, training |
+| [sbomgate](https://github.com/cognis-digital/sbomgate) | Continuous SBOM diff & vulnerability watch with maintainer-change tracking |
+| [sentrylog](https://github.com/cognis-digital/sentrylog) | Single-file SIEM for small teams — Sigma rules + multi-source ingest |
+
+</details>
+
+<details><summary><b>🎯 Tactical Security</b> — 30 repos</summary>
+
+| Tool | Description |
+|---|---|
+| [attackmap](https://github.com/cognis-digital/attackmap) | Map findings to MITRE ATT&CK techniques + coverage heatmap |
+| [authmatrix](https://github.com/cognis-digital/authmatrix) | Test an access-control matrix (role x endpoint) for IDOR/authz gaps |
+| [cloudkeys](https://github.com/cognis-digital/cloudkeys) | Find leaked cloud keys (AWS/GCP/Azure) + classify blast radius |
+| [corsaudit](https://github.com/cognis-digital/corsaudit) | Detect permissive/misconfigured CORS from headers or a config |
+| [cspbuilder](https://github.com/cognis-digital/cspbuilder) | Generate and audit a Content-Security-Policy from a page's resources |
+| [dirsight](https://github.com/cognis-digital/dirsight) | Analyze web content-discovery output (ffuf/gobuster) into ranked endpoints |
+| [dnsrecon](https://github.com/cognis-digital/dnsrecon) | Aggregate DNS recon (records, zone hints, takeover candidates) |
+| [emailrecon](https://github.com/cognis-digital/emailrecon) | Aggregate email OSINT (breach hints, MX, SPF/DMARC posture) |
+| [exfilwatch](https://github.com/cognis-digital/exfilwatch) | Detect DNS/HTTP exfiltration patterns (entropy, beaconing) in logs |
+| [hashid](https://github.com/cognis-digital/hashid) | Identify hash types and estimate crack cost/feasibility |
+| [headerscan](https://github.com/cognis-digital/headerscan) | Grade HTTP security headers (CSP/HSTS/XFO) A-F from a response dump |
+| [honeyurl](https://github.com/cognis-digital/honeyurl) | Generate canary URLs/tokens + a matcher for trip events |
+| [iocextract](https://github.com/cognis-digital/iocextract) | Extract & defang IOCs (IPs/domains/hashes/URLs) from any text |
+| [jwtinspect](https://github.com/cognis-digital/jwtinspect) | Decode JWTs and lint for alg=none, weak secrets, and missing claims |
+| [logsift](https://github.com/cognis-digital/logsift) | Detect brute-force, spray, and anomalous auth events in logs |
+| [metascrub](https://github.com/cognis-digital/metascrub) | Strip identifying metadata from docs/images before release |
+| [nmapdiff](https://github.com/cognis-digital/nmapdiff) | Diff two scans to surface new hosts/ports/services |
+| [pcapsummary](https://github.com/cognis-digital/pcapsummary) | Summarize flows/talkers/protocols from a pcap text export |
+| [phishcheck](https://github.com/cognis-digital/phishcheck) | Score URLs/emails for phishing signals (lookalike, auth, intent) |
+| [portfan](https://github.com/cognis-digital/portfan) | Summarize and diff nmap XML into prioritized, attackable findings |
+| [ratecheck](https://github.com/cognis-digital/ratecheck) | Probe API rate-limit/abuse resistance from a request spec |
+| [reposecure](https://github.com/cognis-digital/reposecure) | One-shot repo security posture grade (secrets/CI/branch rules/deps) |
+| [s3sniff](https://github.com/cognis-digital/s3sniff) | Flag risky cloud-bucket ACLs/policies from a listing or policy JSON |
+| [sigmacheck](https://github.com/cognis-digital/sigmacheck) | Lint and unit-test Sigma detection rules against sample events |
+| [ssltriage](https://github.com/cognis-digital/ssltriage) | Grade TLS config (protocols/ciphers/expiry) from openssl/sslyze output |
+| [ssrfind](https://github.com/cognis-digital/ssrfind) | Find SSRF-prone sinks and unvalidated URL fetches in code |
+| [subhunt](https://github.com/cognis-digital/subhunt) | Aggregate & dedupe subdomain enumeration from multiple sources |
+| [tokenrotate](https://github.com/cognis-digital/tokenrotate) | Plan + track secret rotation across providers from an inventory |
+| [webrecon](https://github.com/cognis-digital/webrecon) | Fingerprint web tech/CMS/frameworks from headers + body |
+| [yararun](https://github.com/cognis-digital/yararun) | Run simple YARA-style string/regex rules over a directory |
+
+</details>
+
+<details><summary><b>🧪 SecOps & DFIR</b> — 29 repos</summary>
 
 | Tool | Description |
 |---|---|
 | [apiseclint](https://github.com/cognis-digital/apiseclint) | Lint OpenAPI specs for security gaps (authz, rate-limit, data exposure) |
 | [asnmap](https://github.com/cognis-digital/asnmap) | Map ASN/CIDR ownership & neighbors from whois/RIR exports |
-| [attackmap](https://github.com/cognis-digital/attackmap) | Map findings to MITRE ATT&CK techniques + coverage heatmap |
-| [authmatrix](https://github.com/cognis-digital/authmatrix) | Test an access-control matrix (role x endpoint) for IDOR/authz gaps |
 | [browserforensics](https://github.com/cognis-digital/browserforensics) | Analyze exported browser history/downloads for IOCs and exfil signs |
-| [c2detect](https://github.com/cognis-digital/c2detect) | C2 server fingerprinter — Cobalt Strike, Sliver, Mythic, Havoc, Brute Ratel |
-| [canarynet](https://github.com/cognis-digital/canarynet) | Self-hosted canary token network — AWS keys, DNS, docs, web URLs |
 | [certsearch](https://github.com/cognis-digital/certsearch) | Analyze Certificate-Transparency exports for subdomains & rogue issuance |
 | [cipherdetect](https://github.com/cognis-digital/cipherdetect) | Detect & crack classical ciphers (caesar/vigenere/xor) by scoring |
-| [cloudkeys](https://github.com/cognis-digital/cloudkeys) | Find leaked cloud keys (AWS/GCP/Azure) + classify blast radius |
 | [cookieaudit](https://github.com/cognis-digital/cookieaudit) | Audit Set-Cookie flags (Secure/HttpOnly/SameSite) from a response dump |
-| [corsaudit](https://github.com/cognis-digital/corsaudit) | Detect permissive/misconfigured CORS from headers or a config |
-| [crackq](https://github.com/cognis-digital/crackq) | Self-hosted password cracking queue — multi-user hashcat with audit log |
-| [cspbuilder](https://github.com/cognis-digital/cspbuilder) | Generate and audit a Content-Security-Policy from a page's resources |
 | [cspm](https://github.com/cognis-digital/cspm) | Cloud security posture from a config export (public buckets, open SGs, weak IAM) |
 | [cyberbench](https://github.com/cognis-digital/cyberbench) | Chainable encode/decode/transform pipeline (base64/hex/rot/xor/url/gzip) |
-| [dirsight](https://github.com/cognis-digital/dirsight) | Analyze web content-discovery output (ffuf/gobuster) into ranked endpoints |
 | [dmarcaudit](https://github.com/cognis-digital/dmarcaudit) | SecOps tool — Cognis Neural Suite |
-| [dnsrecon](https://github.com/cognis-digital/dnsrecon) | Aggregate DNS recon (records, zone hints, takeover candidates) |
 | [dockeraudit](https://github.com/cognis-digital/dockeraudit) | Audit Dockerfiles + image configs for security smells |
-| [edrgap](https://github.com/cognis-digital/edrgap) | EDR coverage & bypass detector — reconciles MDM + EDR + AD inventories |
-| [emailrecon](https://github.com/cognis-digital/emailrecon) | Aggregate email OSINT (breach hints, MX, SPF/DMARC posture) |
 | [entropyscan](https://github.com/cognis-digital/entropyscan) | SecOps tool — Cognis Neural Suite |
 | [evtxsift](https://github.com/cognis-digital/evtxsift) | Find brute-force, persistence & lateral-movement signals in exported Windows event logs |
-| [exfilwatch](https://github.com/cognis-digital/exfilwatch) | Detect DNS/HTTP exfiltration patterns (entropy, beaconing) in logs |
 | [filecarve](https://github.com/cognis-digital/filecarve) | SecOps tool — Cognis Neural Suite |
 | [ghaudit](https://github.com/cognis-digital/ghaudit) | Audit a GitHub org's security posture (branch rules, 2FA, secrets) from an export |
 | [githubrecon](https://github.com/cognis-digital/githubrecon) | Map a GitHub user/org footprint & leaked-secret surface from API exports |
 | [graphqlmap](https://github.com/cognis-digital/graphqlmap) | Analyze GraphQL introspection for risky fields, depth, and authz gaps |
-| [hashid](https://github.com/cognis-digital/hashid) | Identify hash types and estimate crack cost/feasibility |
-| [headerscan](https://github.com/cognis-digital/headerscan) | Grade HTTP security headers (CSP/HSTS/XFO) A-F from a response dump |
-| [honeytrace](https://github.com/cognis-digital/honeytrace) | Active-decoy network lure system — SSH, RDP, SMB, web honeypots |
-| [honeyurl](https://github.com/cognis-digital/honeyurl) | Generate canary URLs/tokens + a matcher for trip events |
 | [iamlint](https://github.com/cognis-digital/iamlint) | Lint cloud IAM policies (AWS/GCP/Azure JSON) for least-privilege violations |
-| [iocextract](https://github.com/cognis-digital/iocextract) | Extract & defang IOCs (IPs/domains/hashes/URLs) from any text |
 | [iocrep](https://github.com/cognis-digital/iocrep) | Score IOCs against offline reputation/allow lists with explainable verdicts |
-| [jwtinspect](https://github.com/cognis-digital/jwtinspect) | Decode JWTs and lint for alg=none, weak secrets, and missing claims |
 | [k8saudit](https://github.com/cognis-digital/k8saudit) | Audit Kubernetes manifests against CIS-style security rules |
-| [logsift](https://github.com/cognis-digital/logsift) | Detect brute-force, spray, and anomalous auth events in logs |
 | [memtriage](https://github.com/cognis-digital/memtriage) | Triage memory-dump artifacts: strings, IOCs, suspicious processes from a dump export |
-| [metascrub](https://github.com/cognis-digital/metascrub) | Strip identifying metadata from docs/images before release |
 | [mftparse](https://github.com/cognis-digital/mftparse) | Analyze an NTFS $MFT CSV for timestomping and suspicious file activity |
-| [nmapdiff](https://github.com/cognis-digital/nmapdiff) | Diff two scans to surface new hosts/ports/services |
-| [payloadlab](https://github.com/cognis-digital/payloadlab) | Static malicious payload analyzer — PE/ELF/LNK/macro/OneNote |
-| [pcapsummary](https://github.com/cognis-digital/pcapsummary) | Summarize flows/talkers/protocols from a pcap text export |
-| [phishcheck](https://github.com/cognis-digital/phishcheck) | Score URLs/emails for phishing signals (lookalike, auth, intent) |
-| [phishforge](https://github.com/cognis-digital/phishforge) | Open-source phishing simulation — campaigns, templates, training |
-| [portfan](https://github.com/cognis-digital/portfan) | Summarize and diff nmap XML into prioritized, attackable findings |
 | [prefetchparse](https://github.com/cognis-digital/prefetchparse) | Surface program-execution evidence from Windows Prefetch exports |
-| [pwnreview](https://github.com/cognis-digital/pwnreview) | Pentest report generator — YAML findings to CREST-grade PDF |
-| [ratecheck](https://github.com/cognis-digital/ratecheck) | Probe API rate-limit/abuse resistance from a request spec |
-| [redpath](https://github.com/cognis-digital/redpath) | Active Directory attack path mapper — minimum-cost paths + remediation priority |
 | [regexlab](https://github.com/cognis-digital/regexlab) | Test, explain & benchmark regexes + a library of security patterns |
-| [reposecure](https://github.com/cognis-digital/reposecure) | One-shot repo security posture grade (secrets/CI/branch rules/deps) |
-| [s3sniff](https://github.com/cognis-digital/s3sniff) | Flag risky cloud-bucket ACLs/policies from a listing or policy JSON |
-| [sbomgate](https://github.com/cognis-digital/sbomgate) | Continuous SBOM diff & vulnerability watch with maintainer-change tracking |
-| [sentrylog](https://github.com/cognis-digital/sentrylog) | Single-file SIEM for small teams — Sigma rules + multi-source ingest |
-| [sigmacheck](https://github.com/cognis-digital/sigmacheck) | Lint and unit-test Sigma detection rules against sample events |
-| [ssltriage](https://github.com/cognis-digital/ssltriage) | Grade TLS config (protocols/ciphers/expiry) from openssl/sslyze output |
-| [ssrfind](https://github.com/cognis-digital/ssrfind) | Find SSRF-prone sinks and unvalidated URL fetches in code |
 | [stixgen](https://github.com/cognis-digital/stixgen) | Build STIX 2.1 bundles from a list of IOCs/observables |
-| [subhunt](https://github.com/cognis-digital/subhunt) | Aggregate & dedupe subdomain enumeration from multiple sources |
 | [tfscan](https://github.com/cognis-digital/tfscan) | Scan Terraform plans/configs for misconfigurations |
 | [timeliner](https://github.com/cognis-digital/timeliner) | Build a forensic super-timeline by merging & normalizing log/artifact CSVs |
-| [tokenrotate](https://github.com/cognis-digital/tokenrotate) | Plan + track secret rotation across providers from an inventory |
 | [ttphunt](https://github.com/cognis-digital/ttphunt) | Hunt MITRE ATT&CK techniques across logs with a rule pack |
 | [waybackrecon](https://github.com/cognis-digital/waybackrecon) | Mine archived URLs/params/endpoints from a Wayback/CDX export |
-| [webrecon](https://github.com/cognis-digital/webrecon) | Fingerprint web tech/CMS/frameworks from headers + body |
 | [yaragen](https://github.com/cognis-digital/yaragen) | Generate candidate YARA rules from sample files/strings |
-| [yararun](https://github.com/cognis-digital/yararun) | Run simple YARA-style string/regex rules over a directory |
 
 </details>
 
