@@ -1,8 +1,8 @@
 # Cognis Neural Suite
 
-> **269+ single-purpose, self-hostable, MCP-native tools** for security, AI, military/IC, compliance, data, dev, and business — by [Cognis Digital](https://cognis.digital).
+> **266+ single-purpose, self-hostable, MCP-native tools** for security, AI, military/IC, compliance, data, dev, and business — by [Cognis Digital](https://cognis.digital).
 
-![Tools](https://img.shields.io/badge/tools-269%2B-6b46c1) [![License](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE) ![MCP](https://img.shields.io/badge/MCP-native-black)
+![Tools](https://img.shields.io/badge/tools-266%2B-6b46c1) [![License](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE) ![MCP](https://img.shields.io/badge/MCP-native-black)
 
 Every tool ships a CLI, JSON/SARIF output, an MCP server, polyglot ports (Py/JS/Go/Rust), a Dev Container, cross-OS + cloud deploy, and CI/CodeQL. Most ship **real, tested implementations**.
 
@@ -30,7 +30,7 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 ## Catalog
 
 
-<details><summary><b>🛡️ AI Security & Agents</b> — 36 repos</summary>
+<details><summary><b>🛡️ AI Security & Agents</b> — 32 repos</summary>
 
 | Tool | Description |
 |---|---|
@@ -40,17 +40,13 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 | [agentpassport](https://github.com/cognis-digital/agentpassport) | Verifiable AI-agent identity + multi-hop delegation chains anchored to a human principal (the unsolved 2026 agent-auth gap) |
 | [agentsmith](https://github.com/cognis-digital/agentsmith) | Config-first scaffolding and orchestration for multi-agent workflows |
 | [aicard](https://github.com/cognis-digital/aicard) | Auto-generated NIST AI RMF / EU AI Act Annex IV model & system cards |
-| [biascope](https://github.com/cognis-digital/biascope) | Embedded bias probe suite — demographic / occupational / geographic |
 | [cloud-setups](https://github.com/cognis-digital/cloud-setups) | Firebase, GCP, and Azure project setups — bootstrap, deploy, IaC, and emulators, merged and rebranded |
 | [cognis-devbox](https://github.com/cognis-digital/cognis-devbox) | Custom dev OS image (Packer/KVM/Vagrant/cloud-init) with every language + cloud + AI tool preinstalled |
 | [cognis-operations](https://github.com/cognis-digital/cognis-operations) | How an agentic company runs — Cognis Digital's 4-layer operating model, org chart, agent registry, and governance |
 | [cognis-sources](https://github.com/cognis-digital/cognis-sources) | Curated index of 10k+ public technical & research links (privacy-filtered) |
 | [compliance-atlas](https://github.com/cognis-digital/compliance-atlas) | Condensed, cross-walked reference for SOC2, ISO 27001, NIST CSF/800-53/800-171, CMMC, GDPR, CCPA, HIPAA, PCI DSS, EU AI Act |
 | [evalbench](https://github.com/cognis-digital/evalbench) | Offline LLM / agent eval harness with regression gates |
-| [guardpost](https://github.com/cognis-digital/guardpost) | Runtime agent firewall — PII redaction, rate limits, policy enforcement |
-| [hallumark](https://github.com/cognis-digital/hallumark) | LLM hallucination & grounding auditor for RAG systems |
 | [hermes](https://github.com/cognis-digital/hermes) | Model-agnostic, portable long-term memory framework for AI agents (MCP-native) |
-| [ledgermind](https://github.com/cognis-digital/ledgermind) | Local LLM cost & token forensics proxy with anomaly detection |
 | [locateanything](https://github.com/cognis-digital/locateanything) | Infer where a photo was taken using a local uncensored vision + reasoning model (OSINT/geoint, 100% local) |
 | [mcpharden](https://github.com/cognis-digital/mcpharden) | MCP server hardening linter — capability declarations, transport, tool descriptions |
 | [mcpify](https://github.com/cognis-digital/mcpify) | Turn any command-line tool into an MCP server — one line, zero boilerplate |
@@ -370,6 +366,14 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 | [recall](https://github.com/cognis-digital/recall) | Privacy-first local RAG over personal data — encrypted, audit-logged |
 | [trackblock](https://github.com/cognis-digital/trackblock) | Family phone stalkerware audit — MVT-class iOS/Android forensics |
 | [vaultmap](https://github.com/cognis-digital/vaultmap) | Personal asset & account inventory — estate-planning-grade encrypted |
+
+</details>
+
+<details><summary><b>🤖 AI Infra & Resources</b> — 1 repos</summary>
+
+| Tool | Description |
+|---|---|
+| [cognis-code](https://github.com/cognis-digital/cognis-code) | Local uncensored AI coding suite — one endpoint wired into VS Code, JetBrains, Cursor, Zed, Neovim, opencode, and Aider |
 
 </details>
 
