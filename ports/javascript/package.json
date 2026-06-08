@@ -1,0 +1,10 @@
+{
+  "name": "@cognis/cognis-neural-suite",
+  "version": "0.2.0",
+  "description": "JavaScript port of cognis-neural-suite (Cognis Neural Suite)",
+  "bin": {
+    "cognis-neural-suite": "index.js"
+  },
+  "license": "LicenseRef-COCL-1.0",
+  "type": "module"
+}
