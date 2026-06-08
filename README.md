@@ -194,6 +194,19 @@ pip install cognis-<tool>
 | [probesite](https://github.com/cognis-digital/probesite) | Synthetic uptime and Playwright checks exported to Prometheus |
 | [statuskit](https://github.com/cognis-digital/statuskit) | Self-hosted status page with incident timeline and subscribers |
 
+## How it fits
+
+```mermaid
+flowchart LR
+  U[You / CI / Agent] --> R[cognis-neural-suite]
+  R --> O[Outputs & artifacts]
+  R --> M[MCP / JSON]
+  M --> AI[AI agents]
+  R --> S[Cognis Neural Suite]
+```
+
+**Explore the suite →** [🗂️ all tools](https://github.com/cognis-digital/cognis-neural-suite) · [⭐ awesome-cognis](https://github.com/cognis-digital/awesome-cognis) · [🔗 cognis-sources](https://github.com/cognis-digital/cognis-sources)
+
 ## License
 
 Source-available under the **Cognis Open Collaboration License (COCL) v1.0** — see [LICENSE](LICENSE).
