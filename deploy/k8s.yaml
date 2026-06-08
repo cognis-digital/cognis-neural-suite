@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: cognis-neural-suite, labels: { app: cognis-neural-suite } }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: cognis-neural-suite } }
+  template:
+    metadata: { labels: { app: cognis-neural-suite } }
+    spec:
+      containers:
+        - name: cognis-neural-suite
+          image: ghcr.io/cognis-digital/cognis-neural-suite:latest
+          ports: [{ containerPort: 8000 }]
+          resources:
+            requests: { cpu: "50m", memory: "64Mi" }
+            limits: { cpu: "500m", memory: "256Mi" }
+---
+apiVersion: v1
+kind: Service
+metadata: { name: cognis-neural-suite }
+spec:
+  selector: { app: cognis-neural-suite }
+  ports: [{ port: 80, targetPort: 8000 }]
