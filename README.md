@@ -1,8 +1,8 @@
 # Cognis Neural Suite
 
-> **270+ single-purpose, self-hostable, MCP-native tools** for security, AI, military/IC, compliance, data, dev, and business — by [Cognis Digital](https://cognis.digital).
+> **268+ single-purpose, self-hostable, MCP-native tools** for security, AI, military/IC, compliance, data, dev, and business — by [Cognis Digital](https://cognis.digital).
 
-![Tools](https://img.shields.io/badge/tools-270%2B-6b46c1) [![License](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE) ![MCP](https://img.shields.io/badge/MCP-native-black)
+![Tools](https://img.shields.io/badge/tools-268%2B-6b46c1) [![License](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE) ![MCP](https://img.shields.io/badge/MCP-native-black)
 
 Every tool ships a CLI, JSON/SARIF output, an MCP server, polyglot ports (Py/JS/Go/Rust), a Dev Container, cross-OS + cloud deploy, and CI/CodeQL. Most ship **real, tested implementations**.
 
@@ -15,6 +15,29 @@ flowchart LR
   S --> BIZ[Business / Data]
   S -.MCP.-> AG[AI agents]
 ```
+
+## Why this suite stands out
+
+Most tools make you choose: cloud-locked **or** abandoned OSS; one language; one IDE; a black box. The Cognis Neural Suite is the rare combination that's **all of the below, across every tool**:
+
+- 🔒 **Self-hosted & private** — runs on your box, your data never leaves.
+- 🧠 **MCP-native** — every tool is an agent capability; drive the whole suite from Claude/Cursor/agents.
+- 🌐 **Polyglot** — the same logic in Python, JavaScript, Go, and Rust (`ports/`).
+- 🧩 **Unified** — one license, one CLI grammar, one JSON/SARIF shape, so findings compose across tools.
+- ✅ **Real, tested code** — not slideware; CLIs you can `pip install` and run today.
+- 🚀 **Ships everywhere** — pip/pipx/uv/Docker/Homebrew/curl, Linux/macOS/Windows, devcontainer, k8s, AWS/Azure/GCP.
+
+**No other single org gives you this breadth (security → AI → military/IC → compliance → data → dev) with this much coherence.**
+
+## ⭐ Start here (5 that punch above their weight)
+
+| Try | One-liner |
+|---|---|
+| [quantumready](https://github.com/cognis-digital/quantumready) | grade your code's post-quantum exposure (NIST FIPS 203/204/205) |
+| [agentpassport](https://github.com/cognis-digital/agentpassport) | the unsolved 2026 problem: prove which human authorized which agent |
+| [uncensored-fleet](https://github.com/cognis-digital/uncensored-fleet) | one-command local multi-model LLM fleet + agent harness |
+| [cognis-code](https://github.com/cognis-digital/cognis-code) | local uncensored coding wired into every IDE |
+| [mcpify](https://github.com/cognis-digital/mcpify) | turn ANY CLI into an MCP server in one line |
 
 ## Install any tool — many ways, every platform
 
@@ -73,7 +96,7 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 
 </details>
 
-<details><summary><b>🪖 Military & IC</b> — 27 repos</summary>
+<details><summary><b>🪖 Military & IC</b> — 24 repos</summary>
 
 | Tool | Description |
 |---|---|
@@ -85,11 +108,8 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 | [comint-osquery](https://github.com/cognis-digital/comint-osquery) | DISA STIG-aligned osquery configs + RMF mapper |
 | [convoy-or](https://github.com/cognis-digital/convoy-or) | Military convoy routing w/ escort, dwell, threat-cost overlays |
 | [convoyplan](https://github.com/cognis-digital/convoyplan) | Defense logistics route/sustainment planner computing fuel, resupply windows, and chokepoint risk from a YAML plan. |
-| [ewcorr](https://github.com/cognis-digital/ewcorr) | Correlate electronic-warfare event logs by time/frequency/bearing to cluster emitters. |
-| [geoaoi](https://github.com/cognis-digital/geoaoi) | Area-of-interest geospatial helper: bounding boxes, geofence checks, and change-event diffs from coordinate logs. |
 | [geoaoi-pro](https://github.com/cognis-digital/geoaoi-pro) | MIL-STD-2525 / APP-6 symbology + AOI helpers (QGIS-compatible) |
 | [honeypot-mil](https://github.com/cognis-digital/honeypot-mil) | Honeypot event enrichment + STIX/TAXII + CISA IOC export |
-| [itarcheck](https://github.com/cognis-digital/itarcheck) | Flags potential ITAR/EAR export-controlled terms and USML categories in code, datasheets, and docs. |
 | [milstdlint](https://github.com/cognis-digital/milstdlint) | Lint documents against MIL-STD / DoD formatting and classification-marking rules. |
 | [natosymbol](https://github.com/cognis-digital/natosymbol) | Generate and validate APP-6/MIL-STD-2525 symbol identification codes (SIDC). |
 | [opsecscan](https://github.com/cognis-digital/opsecscan) | Scan documents and file metadata for OPSEC leaks: geotags, author, GPS EXIF, unit identifiers. |
@@ -205,7 +225,7 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 
 </details>
 
-<details><summary><b>🏦 Fintech & Compliance</b> — 24 repos</summary>
+<details><summary><b>🏦 Fintech & Compliance</b> — 25 repos</summary>
 
 | Tool | Description |
 |---|---|
@@ -226,6 +246,7 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 | [obscan](https://github.com/cognis-digital/obscan) | Conformance and security linter for Open Banking / FAPI APIs: validates OAuth flows, consent scopes, and PSD2 endpoints against the spec. |
 | [panhound](https://github.com/cognis-digital/panhound) | Scans code, logs, fixtures, and S3 buckets for leaked PANs (Luhn-validated card numbers) and CVVs before they hit prod. |
 | [policyforge](https://github.com/cognis-digital/policyforge) | Auto-generate security policies from a short questionnaire |
+| [quantumready](https://github.com/cognis-digital/quantumready) | Post-quantum migration readiness scanner — find quantum-vulnerable crypto and map to NIST PQC (FIPS 203/204/205) |
 | [sanctscan](https://github.com/cognis-digital/sanctscan) | Screens counterparties and transactions against OFAC/EU/UN sanctions lists with fuzzy name matching and explainable hit scoring. |
 | [sbirscout](https://github.com/cognis-digital/sbirscout) | SBIR/STTR topic discovery — DSIP + SBIR.gov + NIH digest with bid scoring |
 | [soc2box](https://github.com/cognis-digital/soc2box) | SOC 2 evidence collector and control tracker, self-hosted |
