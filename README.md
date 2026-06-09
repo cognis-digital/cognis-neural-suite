@@ -1,8 +1,17 @@
+<a name="top"></a>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6b46c1,50:5a3fb0,100:2b6cb0&height=200&section=header&text=Cognis%20Neural%20Suite&fontSize=52&fontColor=ffffff&fontAlignY=40" width="100%"/>
+
 # Cognis Neural Suite
 
-> **268+ single-purpose, self-hostable, MCP-native tools** for security, AI, military/IC, compliance, data, dev, and business — by [Cognis Digital](https://cognis.digital).
+### 271+ single-purpose, self-hostable, MCP-native tools — security · AI · military/IC · compliance · data · dev · business
 
-![Tools](https://img.shields.io/badge/tools-268%2B-6b46c1) [![License](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE) ![MCP](https://img.shields.io/badge/MCP-native-black)
+![Tools](https://img.shields.io/badge/tools-271%2B-6b46c1?style=for-the-badge) [![License](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg?style=for-the-badge)](LICENSE) ![MCP](https://img.shields.io/badge/MCP-native-black?style=for-the-badge) ![Real code](https://img.shields.io/badge/real%2C%20tested-code-2ea043?style=for-the-badge)
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=6B46C1&center=true&vCenter=true&width=900&lines=Self-hosted+%C2%B7+MCP-native+%C2%B7+polyglot+%C2%B7+unified;Real%2C+tested+code+across+271%2B+tools;pip+%C2%B7+pipx+%C2%B7+uv+%C2%B7+Docker+%C2%B7+Homebrew+%C2%B7+curl" width="900"/>
+
+</div>
 
 Every tool ships a CLI, JSON/SARIF output, an MCP server, polyglot ports (Py/JS/Go/Rust), a Dev Container, cross-OS + cloud deploy, and CI/CodeQL. Most ship **real, tested implementations**.
 
@@ -96,7 +105,7 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 
 </details>
 
-<details><summary><b>🪖 Military & IC</b> — 24 repos</summary>
+<details><summary><b>🪖 Military & IC</b> — 27 repos</summary>
 
 | Tool | Description |
 |---|---|
@@ -108,8 +117,11 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 | [comint-osquery](https://github.com/cognis-digital/comint-osquery) | DISA STIG-aligned osquery configs + RMF mapper |
 | [convoy-or](https://github.com/cognis-digital/convoy-or) | Military convoy routing w/ escort, dwell, threat-cost overlays |
 | [convoyplan](https://github.com/cognis-digital/convoyplan) | Defense logistics route/sustainment planner computing fuel, resupply windows, and chokepoint risk from a YAML plan. |
+| [ewcorr](https://github.com/cognis-digital/ewcorr) | Correlate electronic-warfare event logs by time/frequency/bearing to cluster emitters. |
+| [geoaoi](https://github.com/cognis-digital/geoaoi) | Area-of-interest geospatial helper: bounding boxes, geofence checks, and change-event diffs from coordinate logs. |
 | [geoaoi-pro](https://github.com/cognis-digital/geoaoi-pro) | MIL-STD-2525 / APP-6 symbology + AOI helpers (QGIS-compatible) |
 | [honeypot-mil](https://github.com/cognis-digital/honeypot-mil) | Honeypot event enrichment + STIX/TAXII + CISA IOC export |
+| [itarcheck](https://github.com/cognis-digital/itarcheck) | Flags potential ITAR/EAR export-controlled terms and USML categories in code, datasheets, and docs. |
 | [milstdlint](https://github.com/cognis-digital/milstdlint) | Lint documents against MIL-STD / DoD formatting and classification-marking rules. |
 | [natosymbol](https://github.com/cognis-digital/natosymbol) | Generate and validate APP-6/MIL-STD-2525 symbol identification codes (SIDC). |
 | [opsecscan](https://github.com/cognis-digital/opsecscan) | Scan documents and file metadata for OPSEC leaks: geotags, author, GPS EXIF, unit identifiers. |
