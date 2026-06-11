@@ -81,7 +81,7 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 | [evalbench](https://github.com/cognis-digital/evalbench) | Offline LLM / agent eval harness with regression gates |
 | [guardpost](https://github.com/cognis-digital/guardpost) | Runtime agent firewall — PII redaction, rate limits, policy enforcement |
 | [hallumark](https://github.com/cognis-digital/hallumark) | LLM hallucination & grounding auditor for RAG systems |
-| [hermes](https://github.com/cognis-digital/hermes) | Model-agnostic, portable long-term memory framework for AI agents (MCP-native) |
+| [engram](https://github.com/cognis-digital/engram) | Model-agnostic, portable long-term memory framework for AI agents (MCP-native) |
 | [ledgermind](https://github.com/cognis-digital/ledgermind) | Local LLM cost & token forensics proxy with anomaly detection |
 | [locateanything](https://github.com/cognis-digital/locateanything) | Infer where a photo was taken using a local uncensored vision + reasoning model (OSINT/geoint, 100% local) |
 | [mcpharden](https://github.com/cognis-digital/mcpharden) | MCP server hardening linter — capability declarations, transport, tool descriptions |
@@ -100,7 +100,7 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 | [skills](https://github.com/cognis-digital/skills) | Agent skill registry — portable skills for AI agents (MCP/Claude/ClawHub style) |
 | [templates](https://github.com/cognis-digital/templates) | Starter templates: Python CLI, MCP server, Dockerfile, CI, devcontainer, and more |
 | [toolguard](https://github.com/cognis-digital/toolguard) | Runtime allowlist and policy for agent tool-calls |
-| [uncensored-fleet](https://github.com/cognis-digital/uncensored-fleet) | Deploy a local multi-model LLM fleet (llama.cpp) with an agent harness, hermes memory, and a one-command CLI |
+| [uncensored-fleet](https://github.com/cognis-digital/uncensored-fleet) | Deploy a local multi-model LLM fleet (llama.cpp) with an agent harness, engram memory, and a one-command CLI |
 | [windows-toolkit](https://github.com/cognis-digital/windows-toolkit) | Windows power-user starter kit — curated tools, 80+ shortcuts, one-command winget setup |
 
 </details>
