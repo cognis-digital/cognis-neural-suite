@@ -25,6 +25,31 @@ flowchart LR
   S -.MCP.-> AG[AI agents]
 ```
 
+## Usage — step by step
+
+1. Pick any tool from the Catalog below and install it directly from its repo (every tool ships a CLI):
+   ```bash
+   pipx install "git+https://github.com/cognis-digital/<tool>.git"
+   <tool> --help
+   ```
+2. Run the suite demo or per-platform setup from this repo's `scripts/`:
+   ```bash
+   ./scripts/setup-linux.sh      # setup-macos.sh / setup-windows.ps1
+   ./scripts/run-demo.sh
+   ```
+3. Most tools emit JSON/SARIF so findings compose across the suite — pipe one tool into another or into `jq`:
+   ```bash
+   quantumready scan ./src --format json | jq '.findings[]'
+   ```
+4. Drive any tool from an agent over MCP (each repo ships an MCP server), or via Docker:
+   ```bash
+   docker run --rm ghcr.io/cognis-digital/<tool>:latest --help
+   ```
+5. In CI, install the tools you need and gate the build on their exit codes:
+   ```bash
+   ./scripts/ports-test.sh && ./scripts/bench.sh
+   ```
+
 ## Why this suite stands out
 
 Most tools make you choose: cloud-locked **or** abandoned OSS; one language; one IDE; a black box. The Cognis Neural Suite is the rare combination that's **all of the below, across every tool**:
