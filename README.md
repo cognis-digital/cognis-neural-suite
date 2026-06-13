@@ -25,6 +25,10 @@ flowchart LR
   S -.MCP.-> AG[AI agents]
 ```
 
+## What is this?
+
+The Cognis Neural Suite is a collection of 271+ ready-to-use software tools that you can run on your own computer — nothing goes to the cloud unless you choose it. Each tool solves one specific problem: scanning for security weaknesses, checking documents for classification errors, analyzing RF signals, detecting AI hallucinations, and much more. The tools are built for security professionals, developers, and government/defense teams who need reliable utilities they can trust with sensitive data. You browse the catalog, pick the tools you need, and install them with a single command.
+
 ## Why this suite stands out
 
 Most tools make you choose: cloud-locked **or** abandoned OSS; one language; one IDE; a black box. The Cognis Neural Suite is the rare combination that's **all of the below, across every tool**:
@@ -47,6 +51,17 @@ Most tools make you choose: cloud-locked **or** abandoned OSS; one language; one
 | [uncensored-fleet](https://github.com/cognis-digital/uncensored-fleet) | one-command local multi-model LLM fleet + agent harness |
 | [cognis-code](https://github.com/cognis-digital/cognis-code) | local uncensored coding wired into every IDE |
 | [mcpify](https://github.com/cognis-digital/mcpify) | turn ANY CLI into an MCP server in one line |
+
+## Getting started
+
+This repo is the master catalog. To use a tool:
+
+1. Browse the **Catalog** section below to find the tool you need.
+2. Click through to the individual repo (e.g. `github.com/cognis-digital/quantumready`).
+3. Install it with one of the methods in "Install any tool" below, or follow the repo's own `docs/INSTALL.md`.
+4. Run `<tool> --help` to see options.
+
+Each tool is self-contained and runs locally — no shared backend, no account required.
 
 ## Install any tool — many ways, every platform
 
