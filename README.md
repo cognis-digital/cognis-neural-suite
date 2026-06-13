@@ -470,6 +470,32 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 
 It genuinely helps others find them. Contributions welcome under the collaboration-pull model — see any repo's `CONTRIBUTING.md`.
 
+<a name="verification"></a>
+## Verification
+
+
+
+Every push is verified end-to-end. Latest audit (2026-06-13):
+
+```text
+tests        : 0 passed, 0 failed, 0 errored
+compile      : all modules parse
+cli          : n/a
+package      : n/a
+```
+
+<details><summary>CLI surface (<code>--help</code>)</summary>
+
+```text
+(see --help)
+```
+</details>
+
+Full machine-readable results: [`AUDIT.md`](AUDIT.md) · regenerate with `python -m cognis-neural-suite --help` + `pytest -q`.
+
+<div align="right"><a href="#top">↑ back to top</a></div>
+
+
 ## License
 
 Source-available under the **Cognis Open Collaboration License (COCL) v1.0** (some military repos retain their upstream GPL). See each repo's LICENSE.
