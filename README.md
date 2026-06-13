@@ -495,6 +495,12 @@ Every repo also ships Linux/macOS/Windows setup scripts, a Dev Container, JS/Go/
 
 It genuinely helps others find them. Contributions welcome under the collaboration-pull model — see any repo's `CONTRIBUTING.md`.
 
+## Interoperability
+
+`{}` composes with the 300+ tool Cognis suite — JSON in/out and a shared
+OpenAI-compatible `/v1` backbone. See **[INTEROP.md](INTEROP.md)** for the
+suite map, composition patterns, and reference stacks.
+
 ## License
 
 Source-available under the **Cognis Open Collaboration License (COCL) v1.0** (some military repos retain their upstream GPL). See each repo's LICENSE.
