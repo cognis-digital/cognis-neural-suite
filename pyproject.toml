@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "cognis-neural-suite"
+version = "1.0.0"
+description = "271+ single-purpose, self-hostable, MCP-native tools — security · AI · military/IC · compliance · data · dev · business"
+requires-python = ">=3.10"
+license = {text = "COCL-1.0"}
+readme = "README.md"
+
+[project.scripts]
+cognis-neural-suite = "cognis_neural_suite.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cognis_neural_suite*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
