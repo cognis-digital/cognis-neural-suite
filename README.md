@@ -25,6 +25,41 @@ flowchart LR
   S -.MCP.-> AG[AI agents]
 ```
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+**Sample result format** _(illustrative values — run on your own data for real findings):_
+
+```
+{
+"response": {
+"model_id": "mnist-1234",
+"input_data": [
+{
+"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA... (truncated binary data) ...AAAAAElFTkSuQmCC",
+"label": 5
+},
+{
+"image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA... (truncated binary data) ...AAAAAElFTkSuQmCC",
+"label": 8
+}
+],
+"output_data": [
+{
+"prediction": 5,
+"confidence": 0.9
+},
+{
+"prediction": 8,
+"confidence": 0.7
+}
+]
+}
+```
+
+<!-- cognis:example:end -->
+
 ## Usage — step by step
 
 1. Pick any tool from the Catalog below and install it directly from its repo (every tool ships a CLI):
