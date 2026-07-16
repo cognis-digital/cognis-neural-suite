@@ -1,0 +1,15 @@
+# Example sources file for: python -m livesearch --harvest examples/sources.txt
+#
+# One entry per line. Blank lines and '#' comments are ignored.
+#   - a line starting with http(s):// is fetched as an RSS/Atom feed
+#   - a line starting with 'q:' or 'query:' becomes a live web search
+#   - any other text line is also treated as a search query
+
+# --- live web searches (keyless, via Google News RSS) ---
+q: rare earth export controls
+q: critical minerals supply chain
+lithium battery gigafactory
+
+# --- feeds (replace with your own RSS/Atom URLs) ---
+# https://feeds.example.com/markets.rss
+# https://www.example.gov/press/rss
