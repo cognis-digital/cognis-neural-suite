@@ -85,6 +85,68 @@ flowchart LR
    ./scripts/ports-test.sh && ./scripts/bench.sh
    ```
 
+## 📡 `livesearch` — keyless, real-time web-search & feed ingestion
+
+The suite ships a dependency-free live-data module, [`livesearch.py`](livesearch.py),
+that any monitoring/OSINT tool can drop in to get a *live* source of current items
+— **no API keys, no third-party packages** (standard library only). Everything is
+fetched at call time, so results are always as current as the web.
+
+**Install / run**
+
+```bash
+pip install -e .            # exposes the `livesearch` console script + module
+python -m livesearch "rare earth export controls" --when 7d
+```
+
+**Three ways in**, all returning a uniform item shape
+`{"title","link","published","source","query"}`:
+
+| Backend | Call | What it does |
+|---|---|---|
+| Google News RSS | `web_search(query, when="7d")` | keyless live web search; `when` bounds recency (`1h`/`1d`/`7d`) |
+| RSS 2.0 / Atom | `fetch_feed(url)` | parse any feed into dated items |
+| DuckDuckGo HTML | `ddg_search(query)` | scrape fallback when no feed exists |
+
+**Batch harvesting** — mix queries and feeds, keep only recent, de-dupe by link,
+sort newest-first:
+
+```python
+from livesearch import harvest
+items = harvest([
+    {"query": "lithium supply", "when": "7d"},
+    "https://feeds.example.com/markets.rss",
+], since_days=7)
+```
+
+**CLI examples** (all offline-friendly output formats):
+
+```bash
+# CSV of gallium/China stories from the last day
+python -m livesearch "critical minerals" --when 1d --match "gallium|china" --format csv
+
+# NDJSON stream from a file of mixed feeds + queries (see examples/sources.txt)
+python -m livesearch --harvest examples/sources.txt --since-days 7 --format ndjson | jq -c .
+
+# Parse a single feed as pretty JSON
+python -m livesearch --feed https://feeds.example.com/markets.rss --json
+```
+
+Output formats: `plain` (default), `json` (or `--json`), `ndjson`, `csv`. Filter any
+result set with `--match <regex>` (title/link, case-insensitive) and/or `--source <text>`.
+Full reference: [docs/USAGE.md](docs/USAGE.md) · design: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+· direction: [ROADMAP.md](ROADMAP.md).
+
+### FAQ
+
+- **Do I need an API key?** No. `livesearch` uses public RSS/HTML endpoints only.
+- **Any dependencies?** None at runtime — Python 3.10+ standard library. `pytest`/`ruff`
+  are dev-only extras (`pip install -e ".[dev]"`).
+- **How is recency handled?** `web_search`'s `when=` bounds the search; `harvest`'s
+  `since_days=` and `min_year=` drop stale items; undated items are kept.
+- **Is it tested?** Yes — a fully offline pytest suite (network mocked) runs in CI on
+  Python 3.10–3.13. See the `ci` workflow and `tests/`.
+
 ## Why this suite stands out
 
 Most tools make you choose: cloud-locked **or** abandoned OSS; one language; one IDE; a black box. The Cognis Neural Suite is the rare combination that's **all of the below, across every tool**:
